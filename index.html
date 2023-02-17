@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack 4 Starter</title>
+    <title>Сыр</title>
   <link href="style.css" rel="stylesheet"></head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-    <h3>Welcome to Webpack 4 starter </h3>
+    <header class="header">
+      <div class="header__logo">
+        <button type="button" class="header__logo__burger" aria-label="меню">
+        </button>
+        <img src="./img/logo.svg" alt="oltermanni" class="header__image" aria-label="логотип">
+      </div>
+
+      <ul class="header__links links">
+        <li><a href="#">ПРАВИЛА</a></li>
+        <li><a href="#">ПРИЗЫ</a></li>
+        <li><a href="#">ПОБЕДИТЕЛИ</a></li>
+      </ul>
+
+      <ul class="header__auth auth">
+        <li>
+          <button type="button" class="auth__login-button" aria-label="вход">ВХОД</button>
+          <button type="button" class="auth__register-button" aria-label="регистрация">РЕГИСТРАЦИЯ</button>
+        </li>
+      </ul>
+    </header>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
