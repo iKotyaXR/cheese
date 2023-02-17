@@ -1,0 +1,81 @@
+.cheque {
+  &__image {
+    background-image: url('../img/main_photo-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 75.875%;
+    border-bottom-right-radius: 200% 90%;
+    border-bottom-left-radius: 200% 90%;
+    @media (min-width: 440px) {
+      background-image: url('../img/main_photo.png');
+      padding-top: 52.7945619335%;
+    }
+
+    &__man {
+      position: absolute;
+      width: 65%;
+      animation: fly_mobile 1s ease-in-out infinite;
+      animation-direction: alternate;
+      @media (min-width: 440px) {
+        width: 50%;
+        left: 23%;
+        top: 13%;
+        animation: fly_laptops 1s linear infinite;
+        animation-direction: alternate;
+      }
+    }
+  }
+  &__button {
+    position: relative;
+    background-color: $red;
+    width: 164px;
+    height: 47px;
+    color: white;
+    border: 5px solid white;
+    font-weight: 500;
+    border-radius: 29px;
+    top: -30px;
+    margin: 0 auto;
+    @media (min-width: 440px) {
+      top: -23px;
+      width: 218px;
+      height: 50px;
+    }
+  }
+}
+@keyframes fly_mobile {
+  from {
+    top: 15%;
+    left: 20%;
+  }
+  20% {
+    top: 14.8%;
+    left: 20.2%;
+  }
+  40% {
+    top: 14.6%;
+    left: 20.4%;
+  }
+  60% {
+    top: 14.4%;
+    left: 20.6%;
+  }
+  80% {
+    top: 14.2%;
+    left: 20.8%;
+  }
+  to {
+    top: 14%;
+    left: 21%;
+  }
+}
+@keyframes fly_laptops {
+  from {
+    top: 13%;
+    left: 22%;
+  }
+  to {
+    top: 12%;
+    left: 23%;
+  }
+}
