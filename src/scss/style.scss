@@ -3,8 +3,9 @@
 @import 'fonts';
 @import 'header';
 @import 'cheque';
+@import 'rules';
 
 body {
-  background-color: red;
+  background-color: $yellow;
   font-family: 'PFDinTextCondPro';
 }
