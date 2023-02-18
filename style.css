@@ -1098,7 +1098,7 @@ template {
     pointer-events: none; }
     @media (min-width: 720px) {
       .promo__image-container__image {
-        background-image: url(./static/main_photo.png);
+        background-image: url(./static/main_photo.svg);
         padding-top: 53.196347032%; } }
   .promo__button {
     background-color: #e43219;
@@ -1110,7 +1110,7 @@ template {
     font-weight: 500;
     font-size: 16px;
     margin: 0 auto;
-    margin-top: -23px;
+    margin-top: -28px;
     transition: 0.3s; }
     .promo__button:hover {
       transform: scale(1.1); }
@@ -1118,7 +1118,7 @@ template {
       .promo__button {
         width: 234px;
         height: 69px;
-        margin-top: -35px; } }
+        margin-top: -40px; } }
 
 .man-image {
   width: 65%;
@@ -1147,6 +1147,7 @@ template {
   text-align: center;
   padding-bottom: 67px; }
   .rules__title {
+    background: transparent;
     margin-top: 80px;
     font-weight: 500;
     font-size: 34px;
@@ -1204,7 +1205,7 @@ template {
       .rules__list {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 5%;
+        padding: 0 calc((100vw - 720px) / 10);
         align-items: flex-start; } }
   @media (min-width: 720px) {
     .rules {
@@ -1216,13 +1217,14 @@ body {
 
 .products {
   background-color: white;
+  overflow: hidden;
+  position: relative;
   width: 100%; }
   .products__list {
     list-style: none;
     padding: 0;
     margin-bottom: 53px; }
     .products__list__product figure {
-      height: 246px;
       margin: 0;
       display: flex;
       flex-direction: column;
@@ -1231,7 +1233,43 @@ body {
       color: #5a1404;
       font-weight: 400;
       font-size: 18px;
-      line-height: 22px; }
+      line-height: 22px;
+      pointer-events: none; }
+      .products__list__product figure img {
+        width: 100%; }
+  @media (min-width: 720px) {
+    .products {
+      padding: 0 10%; } }
+
+.swiper-pagination-bullet {
+  background-color: #5a1404;
+  opacity: 1; }
+  .swiper-pagination-bullet-active {
+    background-color: transparent;
+    border: 1px solid #5a1404; }
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+  color: transparent;
+  height: 29px;
+  width: 20px; }
+  @media (min-width: 720px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: block; } }
+
+.swiper-button-prev {
+  left: 40px; }
+  .swiper-button-prev::after {
+    background-image: url(./static/left-arrow.svg);
+    background-repeat: no-repeat; }
+
+.swiper-button-next {
+  right: 40px; }
+  .swiper-button-next::after {
+    background-image: url(./static/right-arrow.svg);
+    background-repeat: no-repeat; }
 
 
 /*# sourceMappingURL=style.css.map*/
