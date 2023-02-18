@@ -3,6 +3,8 @@
   padding: 40px 40px 0 40px;
   display: grid;
   grid-template-columns: 100%;
+  align-content: space-between;
+  width: 100%;
   grid-template-areas:
     'A'
     'B'
@@ -50,7 +52,7 @@
   &__social {
     grid-area: C;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
     &__info {
       font-size: 16px;
       color: $brown;
@@ -79,6 +81,7 @@
     @media (min-width: $pc_width) {
       text-align: left;
       font-size: 16px;
+      margin-left: auto;
     }
   }
 
@@ -97,7 +100,7 @@
     grid-template-areas:
       'B A C'
       'D A C';
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 30% 30%;
   }
 }
 .social-logo {
