@@ -18,7 +18,7 @@
       box-sizing: content-box;
       pointer-events: none;
       @media (min-width: $pc_width) {
-        background-image: url('../img/main_photo.png');
+        background-image: url('../img/main_photo.svg');
         padding-top: 53.196347032%;
       }
     }
@@ -33,7 +33,7 @@
     font-weight: 500;
     font-size: 16px;
     margin: 0 auto;
-    margin-top: -23px;
+    margin-top: -28px;
     transition: $transition;
     &:hover {
       transform: scale(1.1);
@@ -41,7 +41,7 @@
     @media (min-width: $pc_width) {
       width: 234px;
       height: 69px;
-      margin-top: -35px;
+      margin-top: -40px;
     }
   }
 }

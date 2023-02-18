@@ -5,6 +5,7 @@
   text-align: center;
   padding-bottom: 67px;
   &__title {
+    background: transparent;
     margin-top: 80px;
     font-weight: 500;
     font-size: 34px;
@@ -68,7 +69,7 @@
     @media (min-width: $pc_width) {
       flex-direction: row;
       justify-content: space-between;
-      padding: 0 5%;
+      padding: 0 calc((100vw - #{$pc_width}) / 10);
       align-items: flex-start;
     }
   }

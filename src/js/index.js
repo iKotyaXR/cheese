@@ -1,15 +1,25 @@
 import '../scss/style.scss'
-import Swiper, { Navigation, Pagination } from 'swiper'
-Swiper.use([Navigation, Pagination])
+import Swiper, { Navigation, Pagination, Lazy } from 'swiper'
+Swiper.use([Navigation, Pagination, Lazy])
 // init Swiper:
 const swiper = new Swiper('.swiper', {
   centeredSlides: false,
   centeredSlidesBounds: true,
   watchOverflow: true,
   direction: 'horizontal',
+  spaceBetween: 20,
+  loop: true,
   slidesPerView: 2.4,
   spaceBetween: 20,
-
+  lazy: true,
+  breakpoints: {
+    500: {
+      slidesPerView: 3
+    },
+    720: {
+      slidesPerView: 4
+    }
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true
