@@ -19,9 +19,9 @@
 
       <nav>
         <ul class="header__links links">
-          <li><a href="#">ПРАВИЛА</a></li>
-          <li><a href="#">ПРИЗЫ</a></li>
-          <li><a href="#">ПОБЕДИТЕЛИ</a></li>
+          <li><a href="#rules">ПРАВИЛА</a></li>
+          <li><a href="#prizes">ПРИЗЫ</a></li>
+          <li><a href="#winners">ПОБЕДИТЕЛИ</a></li>
         </ul>
       </nav>
 
@@ -35,7 +35,6 @@
       </ul>
     </header>
     <main>
-      
       <section class="promo">
         <div class="promo__image-container">
           <div class="promo__image-container__image">
@@ -44,7 +43,7 @@
         </div>
         <a href="#" class="promo__button">ЗАГРУЗИТЬ ЧЕК</a>
       </section>
-      <article class="rules">
+      <article class="rules" id="rules">
         <h2 class="rules__title">НАМ 40 ЛЕТ - ВАМ ПОДАРКИ</h2>
         <ul class="rules__list">
           <li>
@@ -125,14 +124,26 @@
       </article>
       <footer class="footer">
         <ul class="footer__links">
-          <li>Обратная связь</li>
-          <li>Правила акции</li>
-          <li>FAQ</li>
+          <li><a href="#">Обратная связь</a></li>
+          <li><a href="#rules">Правила акции</a></li>
+          <li><a href="#">FAQ</a></li>
         </ul>
-        <div>
-          <span>Информационная линия</span>
-          <a href="tel:+7800333152">8800333152></a>
+        <div class="footer__number">
+          <span class="footer__number__info">Информационная линия</span>
+          <a class="footer__number__link" href="tel:88003331525" aria-label="Информационная линия">8 800 333-15-25</a>
         </div>
+        <div class="footer__social">
+          <span class="footer__social__info">Присоеденяйтесь к нам</span>
+          <ul class="footer__social__links">
+            <li><a class="social-logo facebook" href="#" aria-label="facebook"></a></li>
+            <li><a class="social-logo vk" href="#" aria-label="vk"></a></li>
+            <li><a class="social-logo in" href="#" aria-label="in"></a></li>
+            <li><a class="social-logo twitter" href="#" aria-label="twitter"></a></li>
+            <li><a class="social-logo instagram" href="#" aria-label="instagram"></a></li>
+            <li><a class="social-logo pintrest" href="#" aria-label="pintrest"></a></li>
+          </ul>
+        </div>
+        <div class="footer__copyrigth">© 2020 ООО «Валио»</div>
       </footer>
     </main>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
