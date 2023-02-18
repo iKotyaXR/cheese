@@ -1081,13 +1081,14 @@ template {
 .promo {
   z-index: 1;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 10px; }
   .promo__image-container__image {
     background-color: #ffcd00;
     background-image: url(./static/main_photo-mobile.png);
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    background-size: 100%;
+    background-size: cover;
     width: 100vw;
     margin-left: -10px;
     padding-top: 77.2222222222%;
@@ -1098,7 +1099,7 @@ template {
     pointer-events: none; }
     @media (min-width: 720px) {
       .promo__image-container__image {
-        background-image: url(./static/main_photo.svg);
+        background-image: url(./static/main_photo.png);
         padding-top: 53.196347032%; } }
   .promo__button {
     background-color: #e43219;
@@ -1211,14 +1212,9 @@ template {
     .rules {
       background: linear-gradient(180deg, #ecb200 0%, #ffcf00 78.83%); } }
 
-body {
-  background-color: #ffcd00;
-  font-family: 'PFDinTextCondPro'; }
-
 .products {
   background-color: white;
   overflow: hidden;
-  position: relative;
   width: 100%; }
   .products__list {
     list-style: none;
@@ -1236,10 +1232,21 @@ body {
       line-height: 22px;
       pointer-events: none; }
       .products__list__product figure img {
-        width: 100%; }
+        width: 100%;
+        min-height: 100px; }
+  .products__title {
+    color: #5a1404;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 46px;
+    margin-top: 50; }
+    @media (min-width: 720px) {
+      .products__title {
+        font-size: 36px; } }
   @media (min-width: 720px) {
     .products {
-      padding: 0 10%; } }
+      padding: 0 20%; } }
 
 .swiper-pagination-bullet {
   background-color: #5a1404;
@@ -1270,6 +1277,28 @@ body {
   .swiper-button-next::after {
     background-image: url(./static/right-arrow.svg);
     background-repeat: no-repeat; }
+
+body {
+  background-color: #ffcd00;
+  font-family: 'PFDinTextCondPro', Arial, Helvetica, sans-serif;
+  font-display: swap; }
+
+.footer {
+  background-color: white;
+  padding: 40px;
+  height: 100px;
+  display: grid; }
+  .footer__links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    color: #5a1404;
+    font-weight: 500;
+    font-size: 14px;
+    gap: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
 
 
 /*# sourceMappingURL=style.css.map*/

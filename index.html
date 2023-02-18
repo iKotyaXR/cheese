@@ -2,8 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Cheese website">
+    <meta name="theme-color" content="#ffcd00;">
+    <link rel="preload" as="image" href="./img/man.png">
     <title>Сыр</title>
   <link href="style.css" rel="stylesheet"></head>
   <body>
@@ -36,7 +39,7 @@
       <section class="promo">
         <div class="promo__image-container">
           <div class="promo__image-container__image">
-            <img class="man-image" src="./img/man.png">
+            <img class="man-image" src="./img/man.png" alt="flyman">
           </div>
         </div>
         <a href="#" class="promo__button">ЗАГРУЗИТЬ ЧЕК</a>
@@ -46,32 +49,32 @@
         <ul class="rules__list">
           <li>
             <div class="arrow-block">
-              <img src="./img/cart.svg">
+              <img src="./img/cart.svg" alt="cart">
               <span>Покупайте сыр Oltermanni </span>
             </div>
           </li>
           <li>
             <div class="arrow-block">
-              <img src="./img/pc.svg">
+              <img src="./img/pc.svg" alt="pc">
               <span>Регистрируйте чеки на сайте в период с 1 сентября по 30 ноября
                 2020 года</span>
             </div>
           </li>
           <li>
             <div class="arrow-block">
-              <img src="./img/phone.svg">
+              <img src="./img/phone.svg" alt="phone">
               <span>Получайте гарантированные призы — деньги на телефон</span>
             </div>
           </li>
           <li>
             <div class="arrow-block">
-              <img src="./img/leaderbords.svg">
+              <img src="./img/leaderbords.svg" alt="leaderbords">
               <span>Участвуйте в еженедельных розыгрышах</span>
             </div>
           </li>
           <li>
             <div class="arrow-block">
-              <img src="./img/cupon.svg">
+              <img src="./img/cupon.svg" alt="cupon">
               <span>Получите возможность выиграть 400 000 ₽ на новый интерьер</span>
             </div>
           </li>
@@ -79,12 +82,13 @@
       </article>
 
       <article class="products">
+        <h2 class="products__title">В АКЦИИ УЧАВСТВУЮТ</h2>
         <div class="swiper-button-prev"></div>
         <div class="swiper">
           <ul class="swiper-wrapper products__list">
             <li class="swiper-slide products__list__product">
               <figure>
-                <img src="./img/cheese1.svg" loading="lazy" class="swiper-lazy">
+                <img src="./img/cheese1.png" loading="lazy" class="swiper-lazy" alt="cheese">
                 <div class="swiper-lazy-preloader"></div>
 
                 <figcaption>Лёгкий, брусок 180 г</figcaption>
@@ -92,7 +96,7 @@
             </li>
             <li class="swiper-slide products__list__product">
               <figure>
-                <img src="./img/cheese2.svg" loading="lazy" class="swiper-lazy">
+                <img src="./img/cheese2.png" loading="lazy" class="swiper-lazy" alt="cheese">
                 <div class="swiper-lazy-preloader"></div>
 
                 <figcaption>Лёгкий, слайсы 120, 225 г</figcaption>
@@ -100,7 +104,7 @@
             </li>
             <li class="swiper-slide products__list__product">
               <figure>
-                <img src="./img/cheese3.svg" loading="lazy" class="swiper-lazy">
+                <img src="./img/cheese3.png" loading="lazy" class="swiper-lazy" alt="cheese">
                 <div class="swiper-lazy-preloader"></div>
 
                 <figcaption>Сливочный, брусок 200, 300 г</figcaption>
@@ -108,7 +112,7 @@
             </li>
             <li class="swiper-slide products__list__product">
               <figure>
-                <img src="./img/cheese4.svg" loading="lazy" class="swiper-lazy">
+                <img src="./img/cheese4.png" loading="lazy" class="swiper-lazy" alt="cheese">
                 <div class="swiper-lazy-preloader"></div>
 
                 <figcaption>Сливочный, слайсы 130, 250 г</figcaption>
@@ -119,6 +123,17 @@
         </div>
         <div class="swiper-button-next"></div>
       </article>
+      <footer class="footer">
+        <ul class="footer__links">
+          <li>Обратная связь</li>
+          <li>Правила акции</li>
+          <li>FAQ</li>
+        </ul>
+        <div>
+          <span>Информационная линия</span>
+          <a href="tel:+7800333152">8800333152></a>
+        </div>
+      </footer>
     </main>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
