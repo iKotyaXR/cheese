@@ -1434,14 +1434,6 @@ template {
     text-align: left;
     font-size: 16px; } }
 
-body {
-  background-color: #ffcd00;
-  font-family: 'PFDinTextCondPro', Arial, Helvetica, sans-serif;
-  font-display: swap; }
-
-html {
-  scroll-behavior: smooth; }
-
 .menu {
   width: 100%;
   height: calc(100vh - 62px);
@@ -1467,7 +1459,7 @@ html {
     font-size: 16px;
     border-bottom: 1px solid #ecb200; }
     .menu__anchors li {
-      padding: 12px 0; }
+      padding: 10px 0; }
   .menu__links {
     font-size: 12px;
     margin-top: 15px;
@@ -1482,6 +1474,14 @@ html {
   @media (min-width: 720px) {
     .menu {
       display: none; } }
+
+body {
+  background-color: #ffcd00;
+  font-family: 'PFDinTextCondPro', Arial, Helvetica, sans-serif;
+  font-display: swap; }
+
+html {
+  scroll-behavior: smooth; }
 
 
 /*# sourceMappingURL=style.css.map*/
