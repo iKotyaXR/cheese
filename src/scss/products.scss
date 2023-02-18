@@ -1,8 +1,8 @@
 .products {
   background-color: white;
   overflow: hidden;
-  position: relative;
   width: 100%;
+  position: relative;
   &__list {
     list-style: none;
     padding: 0;
@@ -31,9 +31,12 @@
     color: $brown;
     text-align: center;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 46px;
     margin-top: 50;
+    @media (min-width: $pc_width) {
+      font-size: 36px;
+    }
   }
   @media (min-width: $pc_width) {
     padding: 0 20%;
