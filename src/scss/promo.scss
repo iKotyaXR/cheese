@@ -2,13 +2,14 @@
   z-index: 1;
   position: relative;
   overflow: hidden;
+  padding-bottom: 10px;
   &__image-container {
     &__image {
       background-color: $yellow;
       background-image: url('../img/main_photo-mobile.png');
       background-repeat: no-repeat;
       background-position: 50% 100%;
-      background-size: 100%;
+      background-size: cover;
       width: 100vw;
       margin-left: -10px;
       padding-top: 77.2222222222%;
@@ -18,7 +19,7 @@
       box-sizing: content-box;
       pointer-events: none;
       @media (min-width: $pc_width) {
-        background-image: url('../img/main_photo.svg');
+        background-image: url('../img/main_photo.png');
         padding-top: 53.196347032%;
       }
     }

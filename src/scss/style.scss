@@ -9,7 +9,11 @@
 
 // @import 'swiper/modules/pagination/pagination.min.css';
 
+//Заменить сыр на png
+//Указать alt
+
 body {
   background-color: $yellow;
-  font-family: 'PFDinTextCondPro';
+  font-family: 'PFDinTextCondPro', Arial, Helvetica, sans-serif;
+  font-display: swap;
 }

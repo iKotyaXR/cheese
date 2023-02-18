@@ -26,8 +26,17 @@
       }
     }
   }
+
+  &__title {
+    color: $brown;
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    margin-top: 50;
+  }
   @media (min-width: $pc_width) {
-    padding: 0 10%;
+    padding: 0 20%;
   }
 }
 .swiper-pagination-bullet {
