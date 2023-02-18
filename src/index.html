@@ -12,7 +12,12 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <button type="button" class="header__logo__burger" aria-label="меню">
+        <button
+          type="button"
+          class="header__logo__burger"
+          aria-label="меню"
+          id="burger"
+        >
         </button>
         <img
           src="./img/logo.svg"
@@ -39,6 +44,65 @@
         </li>
       </ul>
     </header>
+    <nav class="menu menu--hidden">
+      <ul class="menu__anchors">
+        <li><a href="#">Правила</a></li>
+        <li><a href="#">Призы</a></li>
+        <li><a href="#">Победители</a></li>
+      </ul>
+      <ul class="menu__links">
+        <li><a href="#">Правила</a></li>
+        <li><a href="#">Призы</a></li>
+        <li><a href="#">Победители</a></li>
+      </ul>
+      <div class="menu__social social">
+        <span class="social__info">Присоеденяйтесь к нам</span>
+        <ul class="social__links">
+          <li
+            ><a
+              class="social-logo social-logo--dark facebook"
+              href="#"
+              aria-label="facebook"
+            ></a
+          ></li>
+          <li
+            ><a
+              class="social-logo social-logo--dark vk"
+              href="#"
+              aria-label="vk"
+            ></a
+          ></li>
+          <li
+            ><a
+              class="social-logo social-logo--dark in"
+              href="#"
+              aria-label="in"
+            ></a
+          ></li>
+          <li
+            ><a
+              class="social-logo social-logo--dark twitter"
+              href="#"
+              aria-label="twitter"
+            ></a
+          ></li>
+          <li
+            ><a
+              class="social-logo social-logo--dark instagram"
+              href="#"
+              aria-label="instagram"
+            ></a
+          ></li>
+          <li
+            ><a
+              class="social-logo social-logo--dark pintrest"
+              href="#"
+              aria-label="pintrest"
+            ></a
+          ></li>
+        </ul>
+      </div>
+    </nav>
     <main>
       <section class="promo">
         <div class="promo__image-container">
@@ -166,9 +230,9 @@
             >8 800 333-15-25</a
           >
         </div>
-        <div class="footer__social">
-          <span class="footer__social__info">Присоеденяйтесь к нам</span>
-          <ul class="footer__social__links">
+        <div class="footer__social social">
+          <span class="social__info">Присоеденяйтесь к нам</span>
+          <ul class="social__links">
             <li
               ><a
                 class="social-logo facebook"

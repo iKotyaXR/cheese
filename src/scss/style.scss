@@ -5,6 +5,7 @@
 @import 'promo';
 @import 'rules';
 @import 'products';
+@import 'footer';
 @import '../../node_modules/swiper/swiper-bundle.css';
 
 body {
@@ -16,132 +17,58 @@ html {
   scroll-behavior: smooth;
 }
 
-.footer {
-  background-color: white;
-  padding: 40px 40px 0 40px;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas:
-    'A'
-    'B'
-    'C'
-    'D';
-  gap: 20px;
+.menu {
+  width: 100%;
+  height: calc(100vh - 62px);
+  background-color: $yellow;
+  position: fixed;
+  z-index: 10;
+  padding: 10px;
+  display: flex;
+  transition: $transition;
+  left: 0;
+  top: 62px;
+  flex-direction: column;
+
+  &__anchors,
   &__links {
-    grid-area: A;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     color: $brown;
     font-weight: 500;
-    font-size: 14px;
-    gap: auto;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    padding-left: 10px;
+
+    & li > a {
+      justify-content: flex-start;
+    }
   }
-  &__number {
-    grid-area: B;
-    text-align: center;
-    &__info {
-      color: $brown;
-      font-weight: 500;
-      font-size: 16px;
-      @media (min-width: $pc_width) {
-        text-align: left;
-      }
+
+  &__anchors {
+    font-size: 16px;
+    border-bottom: 1px solid #ecb200;
+
+    & li {
+      padding: 12px 0;
     }
-    &__link {
-      color: $red;
-      font-weight: 500;
-      font-size: 30px;
-      margin-top: 15px;
-      @media (min-width: $pc_width) {
-        justify-content: flex-start;
-        font-size: 36px;
-      }
+  }
+  &__links {
+    font-size: 12px;
+    margin-top: 15px;
+    & li {
+      padding: 8px 0;
     }
-    @media (min-width: $pc_width) {
-      text-align: left;
-    }
+    border-bottom: 1px solid #ecb200;
   }
   &__social {
-    grid-area: C;
-    text-align: center;
-    margin: 0 auto;
-    &__info {
-      font-size: 16px;
-      color: $brown;
-      @media (min-width: $pc_width) {
-        text-align: left;
-      }
-    }
-    &__links {
-      padding: 0;
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(6, 32px);
-      gap: 10px;
-      justify-items: center;
-      & li > a {
-        background-color: $yellow;
-        transition: $transition;
-        width: 32px;
-        height: 32px;
-        border-radius: 5px;
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
-    }
-    @media (min-width: $pc_width) {
-      text-align: left;
-      font-size: 16px;
-    }
+    padding-left: 10px;
+    margin-top: auto;
   }
 
-  &__copyrigth {
-    grid-area: D;
-    font-size: 10px;
-    color: $brown;
-    text-align: center;
-    @media (min-width: $pc_width) {
-      text-align: left;
-      font-size: 12px;
-    }
+  &--hidden {
+    left: -100vw;
   }
-
   @media (min-width: $pc_width) {
-    grid-template-areas:
-      'B A C'
-      'D A C';
-    grid-template-columns: 33% 33% 33%;
+    display: none;
   }
-}
-.social-logo {
-  background-size: 18px 18px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-.facebook {
-  background-image: url('../img/facebook.svg');
-}
-.in {
-  background-image: url('../img/in.svg');
-}
-.twitter {
-  background-image: url('../img/twitter.svg');
-}
-.instagram {
-  background-image: url('../img/instagram.svg');
-}
-.pintrest {
-  background-image: url('../img/pintrest.svg');
-}
-
-.vk {
-  background-image: url('../img/vk.svg');
-  background-size: 18px 18px;
-  background-position: 50% 50%;
 }

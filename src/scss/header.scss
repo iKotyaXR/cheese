@@ -5,7 +5,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
   &__logo {
     display: flex;
 
@@ -17,7 +20,7 @@
       background-color: transparent;
       border: none;
       margin-right: 10px;
-      transition: $transition;
+      transition: transform $transition;
 
       &:hover {
         transform: scale(1.1);
@@ -109,5 +112,15 @@
     &:hover {
       transform: scale(1.1);
     }
+  }
+}
+
+.cross {
+  background-image: url('../img/cross.svg');
+}
+.hide-button {
+  display: none;
+  @media (min-width: $pc_width) {
+    display: flex;
   }
 }

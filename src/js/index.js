@@ -34,3 +34,14 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev'
   }
 })
+
+const burgerButton = document.getElementById('burger')
+const loginButton = document.querySelector('.auth__login-button')
+const menu = document.querySelector('.menu')
+
+console.log(loginButton)
+burgerButton.onclick = () => {
+  burgerButton.classList.toggle('cross')
+  loginButton.classList.toggle('hide-button')
+  menu.classList.toggle('menu--hidden')
+}
